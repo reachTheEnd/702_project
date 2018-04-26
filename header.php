@@ -1,3 +1,10 @@
+<?php 
+   session_start();
+
+ ?>
+
+
+
 <!doctype html>
 <!---->
 <html lang="en">
@@ -16,11 +23,11 @@
       <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
 
 
-      <form >
+      <form action="includes/login.inc.php" method="POST ">
         <input type="text" name="uid" placeholder="Username/e-mail">
         <input type="password" name="pwd" placeholder="password">
         <button class="btn btn-outline-success my-2 my-sm-0" type="submit" name="submit">login</button>
-              <a class="btn btn-outline-success my-2 my-sm-0" href="signup.php">sign up</a>
+        <a class="btn btn-outline-success my-2 my-sm-0" href="signup.php">sign up</a>
       </form>
 
 
